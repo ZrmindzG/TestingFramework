@@ -1,0 +1,27 @@
+pipeline
+{
+ agent any
+ {
+ stages
+ {
+ stage('get source code')
+ {
+ step{
+     git 'https://github.com/ZrmindzG/TestingFramework.git'
+     echo "hello world";
+     }
+ }
+ stage('build code')
+ {
+ step{
+    bat script:'mvn clean';
+    }
+ }
+ stage('Run Test')
+ {
+ step{
+ bat script:'mvn compile' ;  
+ }
+ }
+ }
+ }
