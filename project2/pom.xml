@@ -40,6 +40,7 @@
     <artifactId>log4j</artifactId>
     <version>1.2.17</version>
 </dependency>
+<<<<<<< HEAD
 </dependencies>
   <build>
         <plugins>
@@ -55,5 +56,11 @@
             </plugin>
         </plugins>
     </build>
+=======
+
+ 
+ </dependencies>
+  
+>>>>>>> 71026c9105eeca742c0ce70c45e8f82124f5470f
 
 </project>
