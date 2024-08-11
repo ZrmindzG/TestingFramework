@@ -4,18 +4,18 @@ pipeline {
     stages {
         stage('Get Source Code') {
             steps {
-                git 'https://github.com/ZrmindzG/TestingFramework.git'
+                git 'https://github.com/ZrmindzG/TestingFramework.git/project2';
                 echo "Hello, World!"
             }
         }
         stage('Build Code') {
             steps {
-                bat 'mvn clean'
+                bat 'mvn clean';
             }
         }
         stage('Run Test') {
             steps {
-                bat 'mvn compile'
+                bat 'mvn compile';
             }
         }
     }
