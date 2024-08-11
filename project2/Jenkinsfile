@@ -1,7 +1,7 @@
 pipeline
 {
  agent any
- {
+ 
  stages
  {
  stage('get source code')
@@ -20,8 +20,8 @@ pipeline
  stage('Run Test')
  {
  step{
- bat script:'mvn compile' ;  
- }
+    bat script:'mvn compile';  
+     }
  }
  }
  }
